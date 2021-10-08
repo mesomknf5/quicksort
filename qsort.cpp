@@ -70,6 +70,7 @@ int main()
 	quickSort(arr, 0, n - 1);
 	cout << "Sorted array: \n";
 	printArray(arr, n);
+	cout<<3323+7474/33;
 	return 0;
 }
 
