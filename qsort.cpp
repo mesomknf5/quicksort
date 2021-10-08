@@ -3,10 +3,10 @@
 using namespace std;
 
 // A utility function to swap two elements 
-void swap(int* a, int* b) 
+void swap(int* aa, int* b) 
 { 
-    int t = *a; 
-    *a = *b; 
+    int t = *aa; 
+    *aa = *b; 
     *b = t; 
 } 
 
