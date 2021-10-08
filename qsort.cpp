@@ -3,10 +3,10 @@
 using namespace std;
 
 // A utility function to swap two elements 
-void swap(int* a, int* b) 
+void swap(int* aa, int* b) 
 { 
-    int t = *a; 
-    *a = *b; 
+    int t = *aa; 
+    *aa = *b; 
     *b = t; 
 } 
 
@@ -65,11 +65,14 @@ void printArray(int arr[], int size)
 // Driver Code
 int main()
 {
+
 	int arr[] = {10, 7, 8, 9, 1, 2, 3 , 6 , 5, 7, 8, 9, 1, 2, 3 , 6 , 5};
+
 	int n = sizeof(arr) / sizeof(arr[0]);
 	quickSort(arr, 0, n - 1);
 	cout << "Sorted array: \n";
 	printArray(arr, n);
+	cout<<3323+7474/33;
 	return 0;
 }
 
