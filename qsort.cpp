@@ -71,7 +71,8 @@ int main()
 	int n = sizeof(arr) / sizeof(arr[0]);
 	quickSort(arr, 0, n - 1);
 	cout << "Sorted array: \n";
-	cout << "Sorted array is: \n";
+
+	
 	printArray(arr, n);
 	cout<<3323+7474/33;
 	return 0;
