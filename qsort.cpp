@@ -26,10 +26,12 @@ int partition (int arr[], int low, int high)
 		if (arr[j] < pivot)
 		{
 			i++; // increment index of smaller element
+
 			swapping(&arr[i], &arr[j]);
 		}
 	}
 	swapping(&arr[i + 1], &arr[high]);
+
 	return (i + 1);
 }
 
@@ -78,4 +80,4 @@ int main()
 	return 0;
 }
 
-// This code is contributed by rathbhupendra
+// This code is contributed by SHAKTI
