@@ -1,5 +1,6 @@
 /* C++ implementation of QuickSort */
 #include <bits/stdc++.h>
+#include <algorithm.h>
 using namespace std;
 
 // A utility function to swap two elements 
