@@ -3,7 +3,7 @@
 using namespace std;
 
 // A utility function to swap two elements 
-void swap(int* aa, int* b) 
+void swapping(int* aa, int* b) 
 { 
     int t = *aa; 
     *aa = *b; 
@@ -26,10 +26,12 @@ int partition (int arr[], int low, int high)
 		if (arr[j] < pivot)
 		{
 			i++; // increment index of smaller element
-			swapp(&arr[i], &arr[j]);
+
+			swapping(&arr[i], &arr[j]);
 		}
 	}
-	swapp(&arr[i + 1], &arr[high]);
+	swapping(&arr[i + 1], &arr[high]);
+
 	return (i + 1);
 }
 
