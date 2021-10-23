@@ -10,7 +10,7 @@ void swapping(int* aa, int* b)
     *aa = *b; 
     *b = t; 
 } 
-/* QuickSort is a Divide and Conquer algorithm */
+
 /* This function takes last element as pivot, places
 the pivot element at its correct position in sorted
 array, and places all smaller (smaller than pivot)
