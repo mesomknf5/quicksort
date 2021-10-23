@@ -1,5 +1,6 @@
 /* C++ implementation of QuickSort */
 #include <bits/stdc++.h>
+#include <algorithm.h>
 using namespace std;
 
 // A utility function to swap two elements 
@@ -9,9 +10,7 @@ void swapping(int* aa, int* b)
     *aa = *b; 
     *b = t; 
 } 
-/*
-QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot
-*/
+
 /* This function takes last element as pivot, places
 the pivot element at its correct position in sorted
 array, and places all smaller (smaller than pivot)
@@ -41,17 +40,17 @@ int partition (int arr[], int low, int high)
 arr[] --> Array to be sorted,
 low --> Starting index,
 high --> Ending index */
-void quickSort(int arr[], int low, int high)
+void quickSort(int arr[], int loww, int high)
 {
-	if (low < high)
+	if (loww < high)
 	{
 		/* pi is partitioning index, arr[p] is now
 		at right place */
-		int pi = partition(arr, low, high);
+		int pi = partition(arr, loww, high);
 
 		// Separately sort elements before
 		// partition and after partition
-		quickSort(arr, low, pi - 1);
+		quickSort(arr, loww, pi - 1);
 		quickSort(arr, pi + 1, high);
 	}
 }
@@ -61,9 +60,8 @@ void printArray(int arr[], int size)
 {
 	int i;
 	for (i = 0; i < size; i++)
-		cout << arr[i] << " ";
-	cout << endl;
-	cout << endl;
+		printf("%d ", arr[i]);
+    printf("\n");
 }
 
 // Driver Code
