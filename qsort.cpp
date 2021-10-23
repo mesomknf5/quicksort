@@ -4,7 +4,7 @@
 using namespace std;
 
 // A utility function to swap two elements 
-void swapping(int* aa, int* b) 
+void swap(int* aa, int* b) 
 { 
     int t = *aa; 
     *aa = *b; 
@@ -28,10 +28,10 @@ int partition (int arr[], int low, int high)
 		{
 			i++; // increment index of smaller element
 
-			swapping(&arr[i], &arr[j]);
+			swap(&arr[i], &arr[j]);
 		}
 	}
-	swapping(&arr[i + 1], &arr[high]);
+	swap(&arr[i + 1], &arr[high]);
 
 	return (i + 1);
 }
