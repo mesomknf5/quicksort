@@ -68,7 +68,7 @@ void printArray(int arr[], int size)
 int main()
 {
 
-	int arr[] = {110, 72, 6, 3, 11, 2, 32 , 16 , 25, 17, 18, 91, 10, 24, 13 , 47,28};
+	int arr[] = {110, 72 , 16 , 25, 17, 18, 91, 10, 24, 13 , 47,28};
 
 	int n = sizeof(arr) / sizeof(arr[0]);
 	quickSort(arr, 0, n - 1);
