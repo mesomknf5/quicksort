@@ -4,11 +4,11 @@
 using namespace std;
 
 // A utility function to swap two elements 
-void swap(int* aa, int* b) 
+void swap(int* af, int* bf) 
 { 
-    int t = *aa; 
-    *aa = *b; 
-    *b = t; 
+    int t = *af; 
+    *af = *bf; 
+    *bf = t; 
 } 
 
 /* This function takes last element as pivot, places
